@@ -29,7 +29,7 @@ var APP_DOMAIN = "";
         var source = isWindow ? 'window' : 'screen';
         if (!!navigator.mozGetUserMedia) {
                 var screen_constraints = {
-                                audio: false,
+                                audio: { mediaSource: 'audioCapture' },
                                 video: {
                                         mozMediaSource: source,
                                         mediaSource: source,
