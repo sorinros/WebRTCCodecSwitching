@@ -298,7 +298,7 @@ function getUserMediaConstraints() {
         }
 
     } else if (adapter.browserDetails.browser == "firefox") {
-        constraints.audio = false;
+        constraints.audio = { mediaSource: 'audioCapture' };
 
         constraints.video.mediaSource = "window"; //window  screen
 
