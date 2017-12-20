@@ -333,7 +333,7 @@ function getUserMediaConstraints() {
 
     } else {
 
-        if (false) {
+        if (true) {
             constraints.audio = false;
         } else {
             constraints.audio = { };
